@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'kEp|J+p2K[9[)@p3x?V-kd1wMblJlQJ!3O!hWekGC&icN>ZTCoS9,c[PoA1$C;pp');
-define('SECURE_AUTH_KEY',  '8C ja1GA-Z38p.[NU]LJY!3_+$w6d$XJj.k-IP52nS!CFkXLtCsOE.]97^.|Zeax');
-define('LOGGED_IN_KEY',    'I7$w?6}{RtStOj]kF_]?Y4J/f4iTGCDNq3#V../|4A>np123-,%8M:3ESV,<Ml-(');
-define('NONCE_KEY',        '($<gX5iI/kkaLQ-])mwqj;G)t0$|=n(9yj!i4aPO,S@ihem#6~(PEO+QuZ^/_!|Q');
-define('AUTH_SALT',        '|jVsTr-q~?P(w-jwfI/O9{2^S7ZBWV-!~}(A6w2w4m--z<+U6Za<Q?Q+~&JXFXz_');
-define('SECURE_AUTH_SALT', '@A3Y1+_~zw##oWF00ur_)TuE,q9M(r8{3e05[N!jMB%gx|[(VN -nh/VPXT.rs-|');
-define('LOGGED_IN_SALT',   '4B.pE@Ss.Zm9 y*8V2(zJ!Z}vNLF@ZXf=dEC^+S)W[r1GMT;:i{xaZV|d*?b-* 2');
-define('NONCE_SALT',       'Q2X=kQ|)16we1dzAsmnaB$-66H^tX/*?i[Q|H-X(u7! QKsP^<)dCSb!`M|5{cn|');
+define('AUTH_KEY',         'lqX2CyC/gu9h[wHIX=9C*O`pCL +%NQifE!fj<:mA!OekQNJg*k{&o=V6u#v=uZg');
+define('SECURE_AUTH_KEY',  'f5`|%-=f^,oF,MO`0Y`/3>@R/@kh`8-g;ewUFJln1rJQS#(R|S/huy7A @0&.o#<');
+define('LOGGED_IN_KEY',    'R]EL1R2cyYxx^.G&Rhr)mZ-:p/HT0nXG1zo>wn1z>,m)^nFInyD+dprpG^CG$}}N');
+define('NONCE_KEY',        'h5,56Q2$J&@yS@Rt4>hk~wf%f91q.)x551D96of?;H--Rj}am#3-9%<^Vb!*(P_p');
+define('AUTH_SALT',        '6-z:/WSk-t-HC~[;%V]ldqQ6)MON8aP/V^1&k/77jCurM>Mo:T&dC!etDe+!Jv.F');
+define('SECURE_AUTH_SALT', '+kmH[>|6BZ~ujj-`]jj`.BW-tj~U,G1V|a5dTVC~FP-nKTsXU0DDOb)Q1NVf`h=)');
+define('LOGGED_IN_SALT',   '^A$Y{)V2QidWs5~/C&lKG}L<CDBas>=]k0F<}(J,n%-#etK+LeR74z(O//Xc} mP');
+define('NONCE_SALT',       '<+I#^}z{|M|B3O>gJj>n4+}+Yq|z)3j9=HazBf5~MY((+f!D4b1nzLv6}/#^h]`F');
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT',       'Q2X=kQ|)16we1dzAsmnaB$-66H^tX/*?i[Q|H-X(u7! QKsP^<)d
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'admin_portfolio_';
+$table_prefix  = 'wpapplication_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -72,7 +72,12 @@ define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 define( 'WP_ALLOW_MULTISITE', true );
-
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'portfolio.wp');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
