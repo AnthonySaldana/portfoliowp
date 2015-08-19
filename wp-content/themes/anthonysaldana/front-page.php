@@ -15,9 +15,6 @@
  */
 
 get_header(); ?>
-<div class="container">
-<div class="row">
-	<h1 class="portfolio-header">Anthony Saldana | Web Developer</h1>
 	<?php 
 	global $post;
 	$args = array(
@@ -27,13 +24,11 @@ get_header(); ?>
 	if($qa_posts){
 		$postgrabber = get_post(8);
 		//var_dump( $post);
-		echo $postgrabber->post_title . "<br/>";
+		//echo $postgrabber->post_title . "<br/>";
 		echo $postgrabber->post_content . "<hr/>";
 	}
 	
 	?>
-</div>
-</div>
 
 	<div id="primary" class="container">
 		<main id="main" class="site-main row" role="main">

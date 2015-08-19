@@ -22,48 +22,36 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
+
 <nav class="navbar navbar-default navbar-static-top">
+      <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <img src="<?php bloginfo('url');?>/wp-content/uploads/2015/08/logo.png" style="background:none; max-height:50px;" alt="Anthony Saldana's personal brand logo">
           </button>
-          <a class="navbar-brand" href="#">Anthony Saldana</a>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home" style="padding:0px;"><img src="<?php bloginfo('url');?>/wp-content/uploads/2015/08/logo.png" style="background:none; max-height:50px;" alt="Anthony Saldana's personal brand logo"></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+			<li class="active"> <a href="#about" class="smoothScroll"> About</a></li>
+			<li class=""> <a href="#services" class="smoothScroll"> Work Experience</a></li>
+			<li> <a href="#education" class="smoothScroll"> Education</a></li>
+			<li class=""> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+			<li class=""> <a href="#blog" class="smoothScroll"> Blog</a></li>
+			<li class=""> <a href="#contact" class="smoothScroll"> Contact</a></li>
+			<li><a class="icon icon-github" target="_blank" href="https://github.com/anthonysaldana"></a></li>
+			<li><a class="icon icon-twitter" target="_blank" href="http://www.twitter.com/anthonysaldana3"></a></li>
+        </ul></div><!--/.nav-collapse -->
       </div>
+    </div>
+    </div>
     </nav>
-<div id="page" class="hfeed site jumbotron">
-		<div class="row">
-			<div class="col-sm-3">Hello</div>
-			<div class="col-sm-9">Hello</div>
-		</div>
+<div id="page" class="hfeed site jumbotron" style="padding-top:5px;">
 	
 
 	<div id="content" class="site-content">
