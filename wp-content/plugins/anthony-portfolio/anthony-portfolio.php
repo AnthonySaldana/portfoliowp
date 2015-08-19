@@ -2,16 +2,16 @@
 /*
 Plugin Name: Anthony's Portfolio App
 Plugin URI: -
-Description: Q & A interface
+Description: A WP Portfolio plugin developed by Anthony Saldana. Create and manage a professional portfolio with ease!
 version: 1.0
 Author: Anthony Saldana
 License: GPLv2 or later
-Text Domain: portfolio-questions
+Text Domain: portfolio_app
 */
 
-add_action('init','register_portfolio_questions');
+add_action('init','register_portfolio_app');
 
-function register_portfolio_questions(){
+function register_portfolio_app(){
 	$labels = array(
         'name' =>__('Portfolio App', 'portfolio_app'),
 	    'singular_name'=>__('Portfolio App' , 'portfolio_app'),
@@ -23,7 +23,7 @@ function register_portfolio_questions(){
         'search_items' => __('Search Projects', 'portfolio_app'),
         'not_found' => __('No Items Found', 'portfolio_app'),
         'not_found_in_trash' => __('No Projects found in Trash', 'portfolio_app'),
-        'menu_name' => __('Anthony\'s Portfolio App', 'portfolio_app'),
+        'menu_name' => __('Arbfolio', 'portfolio_app'),
     );
 
     $args = array(
